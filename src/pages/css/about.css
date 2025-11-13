@@ -1,28 +1,52 @@
+.header-container{
+    float: center;
+    font-family: "Unica One", sans-serif;
+}
+
 .about-h1{
     text-align: center;
     animation-duration: 0.6s;
     animation-name: Slide;
-    transform: translate(-40px, -15px);
-    font-size: 32px;
+    font-size: 50px;
+    font-weight: 400;
+    transform: translateX(20%);
 }
 
 .h1-span {
-    font-size: 28px;
     display: inline-block;
     animation-duration: 1s;
     animation-name: grow-shrink;
-    transform: translate(-5px);
+    transform: translate(0, 10px);
+    font-weight: bold;
+}
+.about-h1-p{
+    font-size: 24px;
 }
 
-.about-Img{
-    background-color: aliceblue;
-    float: right;
+/* About Me */
+.container {
+  display: flex; /* or inline-flex */
 }
+
+.about-me{
+    background-color: rgb(209, 247, 123);
+    float: right;
+    padding: 180px 120px;
+    margin: 40px;
+    border-radius: 10px;
+}
+
+.about-me-h4{
+    color: black;
+    font-style: italic;
+}
+
 
 /* animation */
 @keyframes Slide {
     0%{
-        translate: 80vw 0;
+        transform: translateY(80vw);
+        /* translate: 80vw 0; */
         scale: 200% 1;
     }
     100%{

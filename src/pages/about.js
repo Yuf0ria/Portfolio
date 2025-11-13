@@ -5,14 +5,32 @@ console.log(Test);
 function About (){
     return (
         <body>
-            <div>
+            <div className="header-container">
                 <h1 className="about-h1">
-                    Hi, <span className="h1-span">I'm Dani!</span>
+                    welcome to the <span className="h1-span"> Workshop!</span>
+                    <p className="about-h1-p">
+                        My 2D Game artist portfolio for the year 2025
+                    </p>
                 </h1>
             </div>
-            <div className="about-Img">
-                {/* <img src={Test}/> */}
+            <div className="about-container">
+                <div className="about-me">
+                    <h4 className="about-me-h4">
+                        // 
+                    </h4>
+                </div>
+                <div className="about-me">
+                    <h4 className="about-me-h4">
+                       // 
+                    </h4>
+                </div>
+                <div className="about-me">
+                    <h4 className="about-me-h4">
+                        // 
+                    </h4>
+                </div>
             </div>
+            
         </body>
     );
 };

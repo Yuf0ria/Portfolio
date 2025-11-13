@@ -1,4 +1,5 @@
 import './App.css';
+import React from "react";
 import Navbar from "./components/Navbar";
 import {
     BrowserRouter as Router,
@@ -15,8 +16,8 @@ function App() {
       <Navbar />
       <Routes>
           <Route path="/" element={<About />} />
-          <Route path="/art" element={<Artwork />} />
-          <Route path="/game" element={<Games />}/> 
+          <Route path="/works/art" element={<Artwork />} />
+          <Route path="/works/game" element={<Games />}/> 
       </Routes>
     </Router>
     
