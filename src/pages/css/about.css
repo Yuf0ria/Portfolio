@@ -1,78 +1,177 @@
 .header-container{
     float: center;
-    font-family: "Fredericka the Great", serif;
+    position: relative;
+    top: 15px;
 }
 
 .about-h1{
-    text-align: center;
+    font-family: "Jersey 25", sans-serif;
+    text-align: left;
     animation-duration: 0.6s;
     animation-name: Slide;
-    font-size: 50px;
-    font-weight: 400;
-    transform: translateX(20%);
+    font-size: 160px;
     text-transform: capitalize;
-}
-
-.h1-span {
-    /* display: inline-block; */
-    animation-duration: 1s;
-    animation-name: grow-shrink;
-    transform: translate(0px, 14px);
+    padding: 20px;
 }
 
 .about-h1-p{
-    font-size: 20px;
+    font-family: "Jersey 10", sans-serif;
+    font-size: 28px;
     text-transform: capitalize;
-    font-family: "Fredericka the Great", serif;
     font-kerning: auto;
+    font-weight: bold;
+    padding: 40px 0;
 }
 
 /* About Me */
 .about-container{
+    padding-bottom: 20%;
+}
+.about-me{
+    float: center;
+    text-align: right;
+    padding: 20px 10px;
+}
+
+.about-me-h4{
+    font-family: "Jersey 25", sans-serif;
+    font-kerning: auto;
     animation-duration: 0.6s;
     animation-name: Slide;
 }
 
-.about-me{
-    background-color: rgba(255, 253, 249, 0.073);
-    float: right;
-    text-align: center;
-    padding: 180px 100px;
-    margin: 20px;
-    border-radius: 10px ;
-    transform: translateY(420px);
-    box-shadow: 0 0 4px 0 ;
-    backdrop-filter: blur(10px);
-}
-
-.about-me:hover{
-    transform: translateY(100px);
-    transition: ease-in-out 0.5s;
-}
-
-.about-me-h4{
-    color: rgb(255, 255, 255);
-    transform: translateY(-165px);
-    font-family: "Fredericka the Great", serif;
-    font-kerning: auto;
-}
-
 .about-p{
-    color: rgb(255, 255, 255);
     font-size: 24px;
+    animation-duration: 0.6s;
+    animation-name: Slide
 }
 
+.border-slide{
+    animation-duration: 1.6s;
+    animation-name: Slide-left;
+    transition: ease-in-out;
+    border: 1px solid white;
+    border-radius: 5px 20px 5px 20px;
+    margin: 1.8% -.2% 0 45%;
+}
+.border-slide-about{
+    animation-duration: 1.4s;
+    animation-name: Slide-left;
+    transition: ease-in-out;
+    border: 1px solid white;
+    border-radius: 5px 20px 5px 20px;
+    margin: 1.8% -.2% 0 65%;
+    text-align: left;
+}
+
+.about-img1{
+    /* gradient 1 */
+    mix-blend-mode: multiply;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
+.about-img2{
+    /* girl shadow */
+    animation-duration: 1.8s;
+    animation-name: Slide-left;
+    border-radius: 20px;
+    mix-blend-mode: multiply;
+    position: absolute;
+    top: 10px;
+    z-index: 2;
+}
+
+.about-img3{
+    /* girl */
+    animation-duration: 1.6s;
+    animation-name: Slide-left;
+    position: absolute;
+    top: 10px;
+    z-index: 3;
+}
+
+.about-img4{
+    /* gradient 2 */
+    animation-duration: 3s;
+    animation-name: Slide-up-right;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    zoom: 110%;
+    z-index: 4;
+}
+
+.about-img5{
+    /* multiply leaf shadow */
+    animation-duration: 2s;
+    animation-name: Slide-left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    mix-blend-mode: multiply;
+}
+
+.about-img6{
+    /* color-doge leaf shadow */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 6;
+    mix-blend-mode: color-dodge;
+}
+
+.about-img7{
+    /* normal leaf shadow */
+    animation-duration: 2.2s;
+    animation-name: Slide-left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 7;
+}
+
+.about-img8{
+    /* color-doge light*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    zoom: 104%;
+    z-index: 8;
+    mix-blend-mode: color-dodge;
+}
 
 /* animation */
 @keyframes Slide {
     0%{
         transform: translateY(80vw);
-        /* translate: 80vw 0; */
-        /* scale: 200% 1; */
+        translate: 80vw 0;
+        scale: 200% 1;
     }
     100%{
         translate: 0 0;
-        /* scale: 100% 1; */
+        scale: 100% 1;
+    }
+}
+
+@keyframes Slide-up-right {
+    0%{
+        transform: translateY(80vw);
+    }
+    100%{
+        translate: 0 0;
+    }
+}
+
+@keyframes Slide-left {
+    0%{
+        transform: translateX(-80vw);
+    }
+    100%{
+        translate: 0 0;
     }
 }
 

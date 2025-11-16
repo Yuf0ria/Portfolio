@@ -1,55 +1,77 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
-.hedvig-letters-serif {
-  font-family: "Hedvig Letters Serif", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-.fredericka-the-great-regular {
-  font-family: "Fredericka the Great", serif;
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+25&display=swap');
+.jersey-25-regular {
+  font-family: "Jersey 25", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-  *{
-    overflow: hidden;
-    /* firefox */
-    scrollbar-width: none;
-  }
+.jersey-10-regular {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+*{
+  overflow: hidden;
+  /* firefox */
+  scrollbar-width: none;
+  margin: 0;
+  padding:0;
+  /* removes highlight on text and images */
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+*:focus{
+  outline: none !important;
+}
 
 body {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   font-size: calc(10px + 2vmin);
   color: white;
-  font-family: "Hedvig Letters Serif", serif;
-  margin: 0;
-  padding: 0;
+  font-family: "Jersey 10", sans-serif;
+  padding-bottom: 50%;
+}
+
+.background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  mix-blend-mode: normal;
+  z-index: -1;
 }
 
 /* navigation */
 nav {
-  flex: 1;  
   flex-direction: row;
-  padding: 20;
-  font-family: "Fredericka the Great", serif;
+  border: 1px solid #ffffff;
+  border-radius: 5px 20px 5px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "Jersey 25", sans-serif;
+  position: sticky !important;
+  z-index: 10;
+  animation-duration: 1.6s;
+  animation-name: Slide-down;
 }
 
 nav ul{
   list-style: none;
-  padding: 20px;
-  margin: 0px;
   overflow: hidden;
-  background-color: transparent;
 }
 
 nav ul li{
   text-align: center;
-  padding: 14px 16px;
+  padding: 16px 40px;
   float: right;
 }
 
@@ -58,29 +80,22 @@ nav ul li{
   text-decoration: none;
 }
 
-.nav-upper{
-  text-transform: uppercase;
-}
-
-.nav-color:hover{
-  color: rgb(203, 235, 61);
-}
 .Nav-elements{
   float: left;
-
 }
 
 /* div */
 div{
-  margin: 0;
+  margin: 10px;
   padding: 10px;
 }
 
-/* @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+/* animation */
+@keyframes Slide-down{
+    0%{
+        transform: translateY(-80vw);
+    }
+    100%{
+        translate: 0;
+    }
+}
