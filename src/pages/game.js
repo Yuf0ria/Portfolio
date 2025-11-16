@@ -1,23 +1,30 @@
-import"./css/game.css";
+import './css/game.css';
+//parralax effects
 import BG_1 from "./Img/parallax/1.png";
 import BG_4 from "./Img/parallax/4.png";
 import BG_6 from "./Img/parallax/6.png";
 import BG_8 from "./Img/parallax/8.png";
+//Game Images
+import Lines from "./Img/GameCovers/Lines.png";
+import NES from "./Img/GameCovers/NES.png";
+import Sheep from "./Img/GameCovers/Sheep.png";
 function Games () {
     return (
         <body>
             {/* gallery container */}
             <img className="about-img1" src={BG_1} alt="gradient 1"/>
-            <div className="gal-con"> 
-                <div className="gal-">
+            <div className="gallery"> 
+                <div className="gal-con">
+                    <img src={Lines}></img>
+                    <p className='gal-text'>
+                        TExt of content here lalala
+                    </p>
+                </div>
+                <div className="gal-con">
                     {/* img
                     link */}
                 </div>
-                <div className="gal-">
-                    {/* img
-                    link */}
-                </div>
-                <div className="gal-">
+                <div className="gal-con">
                     {/* img
                     link */}
                 </div>

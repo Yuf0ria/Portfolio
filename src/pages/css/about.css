@@ -28,9 +28,11 @@
     padding-bottom: 20%;
 }
 .about-me{
+    position: relative;
     float: center;
     text-align: right;
     padding: 20px 10px;
+    z-index: 11;
 }
 
 .about-me-h4{
