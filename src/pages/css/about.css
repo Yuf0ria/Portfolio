@@ -66,104 +66,45 @@
     text-align: left;
 }
 
-.about-img1{
-    /* gradient 1 */
-    mix-blend-mode: multiply;
-    position: absolute;
-    right: 0;
-    z-index: 1;
-    height: 100vh; /* Full viewport height */
-}
 
-.about-img2{
-    /* girl shadow */
-    animation-duration: 1.8s;
-    animation-name: Slide-left;
-    border-radius: 20px;
-    mix-blend-mode: multiply;
-    position: absolute;
-    top: 10px;
-    z-index: 2;
-    height: 100vh; /* Full viewport height */
-}
+@media (max-width: 768px) {
 
-.about-img3{
-    /* girl */
-    animation-duration: 1.6s;
-    animation-name: Slide-left;
-    position: absolute;
-    top: 10px;
-    z-index: 3;
-    height: 100vh; /* Full viewport height */
-}
-
-.about-img4{
-    /* gradient 2 */
-    animation-duration: 3s;
-    animation-name: Slide-up-right;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    zoom: 111.5%;
-    z-index: 4;
-    height: 100vh; /* Full viewport height */
-    background-size: 100% auto;
-}
-
-.about-img5{
-    /* multiply leaf shadow */
-    animation-duration: 2s;
-    animation-name: Slide-left;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 5;
-    mix-blend-mode: multiply;
-    height: 100vh; /* Full viewport height */
-}
-
-.about-img6{
-    /* color-doge leaf shadow */
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 6;
-    mix-blend-mode: color-dodge;
-    height: 100vh; /* Full viewport height */
-}
-
-.about-img7{
-    /* normal leaf shadow */
-    animation-duration: 2.2s;
-    animation-name: Slide-left;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 7;
-    height: 100vh; /* Full viewport height */
-}
-
-.about-img8{
-    /* color-doge light*/
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 8;
-    mix-blend-mode: color-dodge;
-    height: 100vh; /* Full viewport height */
-    background-size: 100% auto;
-    zoom: 110%;
-}
-
-  @media (min-width: 1920px) {
-        .parallax-layer {
-            background-position: top center; /* Adjust position for larger screens */
-            /* Maybe use a different, higher-res background image */
-            /* background-image: url('your-large-screen-image.jpg'); */
-        }
+    .about-h1{
+        font-size: 32px;
+        text-transform: capitalize;
+        padding: 0;
+        text-align: center;
     }
+
+    .about-h1-p{
+        font-size: 16px;
+        padding: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    /* About Me */
+    .about-me{
+        position: relative;
+        float: left;
+        padding: 10px 10px;
+        z-index: 11;
+    }
+
+    .about-p{
+        font-size: 18px;
+    }
+
+    .border-slide{
+        margin: 0;
+        margin-top: 10px;
+        padding: 10px;
+    }
+    .border-slide-about{
+        margin: 10px;
+        text-align: left;
+    }
+}
 
 /* animation */
 @keyframes Slide {

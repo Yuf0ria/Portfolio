@@ -1,4 +1,5 @@
 import './css/about.css';
+import './css/img.css'
 //parallax images
 import BG_1 from "./Img/parallax/1.png";
 import BG_2 from "./Img/parallax/2.png";

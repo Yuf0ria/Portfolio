@@ -38,7 +38,6 @@ body {
   font-size: calc(10px + 2vmin);
   color: white;
   font-family: "Jersey 10", sans-serif;
-  padding-bottom: 50%;
   background: url('./pages/Img/background.jpg') center center / cover no-repeat fixed;
 }
 
@@ -93,11 +92,7 @@ div{
   padding: 10px;
 }
 
-@media (min-width: 1024px) {
-  .background {
-    background: url('./pages/Img/background.jpg') center center / cover no-repeat fixed;
-  }
-}
+
 
 /* animation */
 @keyframes Slide-down{
