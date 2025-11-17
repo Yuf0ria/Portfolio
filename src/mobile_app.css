@@ -1,6 +1,12 @@
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   html, body{
-    overflow: hidden;
+    overflow-x: hidden;
     height: 100%;
+  }
+
+  /* navigation */
+  nav ul li{
+    padding: 12px;
+    float: right;
   }
 }
