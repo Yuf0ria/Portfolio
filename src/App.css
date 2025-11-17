@@ -62,7 +62,7 @@ nav {
   text-transform: uppercase;
   font-family: "Jersey 25", sans-serif;
   position: sticky !important;
-  z-index: 10;
+  z-index: 20;
   animation-duration: 1.6s;
   animation-name: Slide-down;
 }

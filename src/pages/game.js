@@ -16,37 +16,38 @@ function Games () {
                 <div className="gal-con">
                     <img src={Lines}></img>
                     <h5 className='gal-h5'>
-                        Year of Release
+                        Year 2024
                     </h5>
                     <h6 className='gal-h6'>
-                        Role
+                        2D Animator
                     </h6>
                     <p className='gal-p'>
-                        TExt of content here lalala
+                        Using Frame-By-Frame Animation
+                    </p>
+                </div>
+                <div className="gal-con">
+                    <img src={Sheep}></img>
+                    
+                    <h5 className='gal-h5'>
+                        End of Year 2024
+                    </h5>
+                    <h6 className='gal-h6'>
+                        Developer
+                    </h6>
+                    <p className='gal-p'>
+                        Using RpgMaker, JS & ruby
                     </p>
                 </div>
                 <div className="gal-con">
                     <img src={NES}></img>
                     <h5 className='gal-h5'>
-                        Year of Release
+                        Year 2025
                     </h5>
                     <h6 className='gal-h6'>
-                        Role
+                        Designer & Programmer
                     </h6>
                     <p className='gal-p'>
-                        TExt of content here lalala
-                    </p>
-                </div>
-                <div className="gal-con">
-                    <img src={Sheep}></img>
-                    <h5 className='gal-h5'>
-                        Year of Release
-                    </h5>
-                    <h6 className='gal-h6'>
-                        Role
-                    </h6>
-                    <p className='gal-p'>
-                        TExt of content here lalala
+                        Unity C#
                     </p>
                 </div>
             </div>

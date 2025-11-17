@@ -1,3 +1,12 @@
+.front{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 13;
+    height: 100vh; /* Full viewport height */
+    background-size: 100% auto;
+    zoom: 110%;
+}
 .slide-left{
     animation-duration: 2.2s;
     animation-name: Slide-left;

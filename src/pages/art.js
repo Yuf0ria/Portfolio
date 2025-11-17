@@ -1,8 +1,8 @@
 import "./css/art.css";
 import BG_1 from "./Img/parallax/1.png";
-import BG_4 from "./Img/parallax/4.png";
 import BG_6 from "./Img/parallax/6.png";
 import BG_8 from "./Img/parallax/8.png";
+import Front from "./Img/Something is Happening.png";
 
 function Artwork() {
     return(
@@ -13,7 +13,6 @@ function Artwork() {
                 <div className="art-">
                     {/* img
                     link */}
-                    test
                 </div>
                 <div className="art-">
                     {/* img
@@ -24,9 +23,9 @@ function Artwork() {
                     link */}
                 </div>
             </div>
-            <img className="about-img4 slide-left" src={BG_4} alt="gradient 2"/>
             <img className="about-img6" src={BG_6} alt="color-dodge leaf shadow"/>
             <img className="about-img8" src={BG_8} alt="color-dodge light"/>
+            <img className="front" src={Front} alt="gradient 1"/>
         </body>
     );
 };

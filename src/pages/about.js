@@ -25,7 +25,7 @@ function About (){
             <img className="about-img2" src={BG_2} alt="girl shadow"/>
             <img className="about-img3" src={BG_3} alt="girl"/>
             <div className="about-container">
-                <Link className={"nav-color"} to="/about-Contact">
+                <Link className={"nav-color"} to="/portfolio">
                     <div className="about-me border-slide-about">
                         <h4 className="about-me-h4">
                         Senior Game Dev Student
@@ -35,7 +35,7 @@ function About (){
                         </p>
                     </div>
                 </Link>
-                <Link className={"nav-color"} to="/about-Content">
+                <Link className={"nav-color"} to="/portfolio">
                     <div className="about-me border-slide-about">
                         <h4 className="about-me-h4">
                             About
